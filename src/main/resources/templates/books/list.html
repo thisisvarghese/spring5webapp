@@ -5,8 +5,8 @@
     <title>Title</title>
 </head>
 
-<h1 style="text-align: center;">Guru spring</h1>
-<p>Book List</p>
+<h1 style="text-align: center;">Books Lost</h1>
+<p>Books List</p>
 
 <body>
 <table style="border-collapse: collapse; width: 100%;" border="1">
@@ -14,12 +14,12 @@
     <tr>
         <td style="width: 33.3333%;">Id</td>
         <td style="width: 33.3333%;">Title</td>
-        <td style="width: 33.3333%;">Author</td>
+        <td style="width: 33.3333%;">isbn</td>
     </tr>
     <tr th:each="book : ${books}">
         <td style="width: 33.3333%;" th:text="${book.id}"></td>
-        <td style="width: 33.3333%;">efdsf</td>
-        <td style="width: 33.3333%;">dsfsdf</td>
+        <td style="width: 33.3333%;" th:text="${book.title}"></td>
+        <td style="width: 33.3333%;" th:text="${book.isbn}"></td>
     </tr>
     </tbody>
 </table>
